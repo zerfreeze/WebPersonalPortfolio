@@ -1,35 +1,32 @@
 <form>
-    <div class="mb-3">
-        <label for="contactFirstNameInput" class="form-label">First Name: </label>
-        <input type="text" class="form-control" id="contactFirstNameInput" aria-describedby="firstNameHelp">
-      </div>
-    <div class="mb-3">
-        <label for="contactLastName" class="form-label">Last Name:</label>
-        <input type="text" class="form-control" id="contactLastNameInput" aria-describedby="lastNameHelp">
-    </div>
-    <div class="mb-3">
-        <label for="contactNumberInput" class="form-label">Contact Number:</label>
-        <input type="number" class="form-control" id="contactNumberInput" aria-describedby="contactNumberHelp">
-        <div id="contactNumberHelp" class="form-text">Please add the code of the country</div>
-      </div>
-    <div class="mb-3">
-      <label for="contactEmailInput" class="form-label">Email address:</label>
-      <input type="email" class="form-control" id="contactEmailInput" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="contactMessageInput" class="form-label">Message:</label>
-        <textarea class="form-control" id="contactMessageInput" rows="3"></textarea>
-        <div id="messageHelp" class="form-text">Write your message in this area.</div>
-    </div>
+    <div class="container col-6 justify-content-center align-items-center">
+        <div class="mb-3">
+            <label for="contactFirstNameInput" class="form-label">First Name: </label>
+            <input type="text" class="form-control" id="contactFirstNameInput" aria-describedby="firstNameHelp">
+        </div>
+        <div class="mb-3">
+            <label for="contactLastName" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="contactLastNameInput" aria-describedby="lastNameHelp">
+        </div>
+        <div class="mb-3">
+            <label for="contactNumberInput" class="form-label">Contact Number:</label>
+            <input type="number" class="form-control" id="contactNumberInput" aria-describedby="contactNumberHelp" placeholder="+14161234567">
+            <div id="contactNumberHelp" class="form-text">Please add the code of the country</div>
+        </div>
+        <div class="mb-3">
+        <label for="contactEmailInput" class="form-label">Email address:</label>
+        <input type="email" class="form-control" id="contactEmailInput" aria-describedby="emailHelp" placeholder="mymail@domain.com">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="contactMessageInput" class="form-label">Message:</label>
+            <textarea class="form-control" id="contactMessageInput" rows="3" placeholder="Write your message here..."></textarea>
+
+        </div>
+        
+        <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="home">Submit</a>
     
-<button type="submit" class="btn btn-primary">Submit</button>
 
 
-<!-- To review when the email input is invalid.
-<form class="form-floating">
-            <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
-            <label for="floatingInputInvalid">Invalid input</label>
-    </form>
-
--->
+    </div>
+</form>
